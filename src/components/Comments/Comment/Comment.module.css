@@ -1,0 +1,39 @@
+.comments {
+  padding: 15px 10px;
+  border-radius: 5px;
+  border: 2px solid rgb(97, 146, 24);
+  margin-bottom: 15px;
+}
+
+.title {
+  text-transform: uppercase;
+}
+
+.box {
+  display: flex;
+  align-items: center;
+}
+
+.id {
+  font-size: 15px;
+  text-transform: uppercase;
+}
+
+.btn {
+  margin-top: 10px;
+  color: white;
+  width: 150px;
+  height: 25px;
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(58, 81, 23);
+}
+
+.btn:hover {
+  cursor: pointer;
+  background-color: rgb(108, 154, 41);
+}
+
+.btn:active {
+  background-color: rgb(25, 35, 10);
+}

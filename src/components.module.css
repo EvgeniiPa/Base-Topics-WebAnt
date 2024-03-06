@@ -1,0 +1,14 @@
+.comments{
+    display: flex;
+    justify-content: space-between;
+    width:90vw;
+    margin: 0 auto;
+}
+
+.comments__title{
+
+}
+
+.comments__body{
+
+}
