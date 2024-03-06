@@ -2,17 +2,18 @@ import React, { useContext } from "react";
 import Comment from "./Comment/Comment";
 import axios from "axios";
 import { MyContext } from "../../context/context";
+import axiosGetRequest from "../../axios-function/axios.function";
 
 export default function Comments({ comments }) {
-  const {  setCommentsList, } =
-    useContext(MyContext);
+  const { setCommentsList } = useContext(MyContext);
 
   async function axiosGetRequest(url, id) {
     try {
       const response = await axios.get(
-        `https://jsonplaceholder.typicode.com/comments?postId=${id}`
+        `${process.env.REACT_APP_BASE}/comments?postId=${id}`
       );
       setCommentsList(response.data);
+      console.log(response.data);
     } catch (error) {
       console.error(error);
     }
